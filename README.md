@@ -41,6 +41,12 @@ Recent autonomous pipelines, agentic tools, and intelligent automation systems I
 - **Privacy-Centric AI Financial Coach**: Enforces strict client/server PII scrubbing (masking account numbers, card numbers, and emails) and zero history retention (`store: false`), analyzing spending leaks and simulating Avalanche vs. Snowball payoff trajectories.
 - **Zero-Token Rule Cache & Edge Security**: Features a local merchant categorization cache (`0ms` / 0 tokens for recurring vendors) and hardened Vercel Edge authentication using Web Crypto (`crypto.subtle`) HMAC-SHA256 session signatures.
 
+**[Cybersecurity & Infra Digest MCP](https://github.com/williambulk/cybersecurity-digest-mcp)**
+<br>An automated intelligence agent and Model Context Protocol (MCP) server that monitors production domain uptime, hosting status across 7 major providers, and critical security advisories:
+- **Two-Step Outage Verification**: Validates live production domains against upstream CDN/hosting status pages (Cloudflare, Kinsta, WP Engine, Fly.io, Pantheon, Ploi.io, SiteGround) to prevent false-alarm alerts during non-impacting vendor notices.
+- **Full-Stack Vulnerability & Advisory Tracking**: Continuously aggregates high-impact CVEs and zero-days across PHP, WordPress (Wordfence & Patchstack), Sanity CMS, Statamic, Node.js/npm, Nuxt, Next.js, and CISA Known Exploited Vulnerabilities (KEV).
+- **Multi-Platform Alerting & Extensible Engine**: Dispatches real-time incident alerts and daily summaries directly to **Slack** and **WhatsApp** (with modular architecture easily extensible to Discord, Microsoft Teams, or custom webhooks), alongside interactive MCP tools for AI agents (Claude Desktop, Antigravity) to query live security feeds on demand.
+
 **[NFS-e Automator (Emissor Nacional)](https://github.com/williambulk/notafiscalautomator)**
 <br>A 100% autonomous, hands-free automation engine for issuing service invoices (NFS-e) via the Brazilian Federal Revenue (Receita Federal) National Portal:
 - **End-to-End Browser Automation**: Uses Playwright to navigate complex multi-step government portals, perform automatic CNPJ taxpayer verification, and calculate municipal service taxes without manual intervention.
