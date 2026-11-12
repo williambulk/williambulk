@@ -21,13 +21,25 @@ Working as Thrive Lead (Technical Support Team Lead) at <a href="https://takt.co
   <tr><th scope="row">Nationality</th><td>Brazilian 🇧🇷</td></tr>
   <tr><th scope="row">Occupation</th><td>Thrive Lead (Technical Support Team Lead) & Automation Engineer</td></tr>
   <tr><th scope="row">Core Skills</th><td>JavaScript, TypeScript, React, Node.js, PHP, Python, HTML/CSS</td></tr>
-  <tr><th scope="row">AI & Automation</th><td>Gemini Vision AI, Playwright Browser Automation, 2Captcha API, Cloud APIs, Agentic Pipelines</td></tr>
+  <tr><th scope="row">AI & Automation</th><td>Gemini Multimodal AI, Model Context Protocol (MCP), Playwright Browser Automation, 2Captcha API, Cloud APIs, Agentic Pipelines</td></tr>
   <tr><th scope="row">Currently Exploring</th><td>Agentic AI Workflows, System Design & Resilient Distributed Automations</td></tr>
 </tbody>
 </table>
 
 ## 🤖 AI & Intelligent Automations ##
-Recent autonomous pipelines and intelligent automation systems I’ve architected and shipped:
+Recent autonomous pipelines, agentic tools, and intelligent automation systems I’ve architected and shipped:
+
+**[Zendesk MCP Server](https://github.com/williambulk/zendesk-mcp)**
+<br>A production-grade Model Context Protocol (MCP) server connecting LLM agents (Claude, Cursor, Codex) directly to Zendesk Support via stdio and authenticated Streamable HTTP:
+- **Comprehensive Agent Tooling**: Exposes tools for semantic ticket search, threaded conversation inspection with public vs. internal comment visibility enforcement, custom field schema discovery, and attachment handling with size and malware verification.
+- **Enterprise-Grade Auth & Safe Writes**: Implements OAuth 2.0 with PKCE, tenant pinning, atomic multi-process token rotation locking, strict read/write permission segregation, and optimistic concurrency control (`safe_update`) to prevent stale overwrites.
+- **Autonomous Ticket Polling Engine**: Features a background daemon (`launchd` LaunchAgent) that monitors all accessible tickets for incoming replies, manages comment deduplication, and feeds real-time updates directly into an AI agent inbox.
+
+**[PulseBudget — AI Personal Finance & Debt Planner](https://github.com/williambulk/Budget-Planner)**
+<br>A lightweight, privacy-first personal finance and multi-card debt payoff PWA powered by the Google Gemini API (`@google/genai`) and Next.js:
+- **Multimodal Receipt & Statement Extraction**: Ingests mobile banking screenshots, receipt images, and statement PDFs using **Gemini 3.8 Flash** to extract and categorize structured financial records in seconds.
+- **Privacy-Centric AI Financial Coach**: Enforces strict client/server PII scrubbing (masking account numbers, card numbers, and emails) and zero history retention (`store: false`), analyzing spending leaks and simulating Avalanche vs. Snowball payoff trajectories.
+- **Zero-Token Rule Cache & Edge Security**: Features a local merchant categorization cache (`0ms` / 0 tokens for recurring vendors) and hardened Vercel Edge authentication using Web Crypto (`crypto.subtle`) HMAC-SHA256 session signatures.
 
 **[NFS-e Automator (Emissor Nacional)](https://github.com/williambulk/notafiscalautomator)**
 <br>A 100% autonomous, hands-free automation engine for issuing service invoices (NFS-e) via the Brazilian Federal Revenue (Receita Federal) National Portal:
